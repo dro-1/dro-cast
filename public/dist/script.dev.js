@@ -185,11 +185,11 @@ console.log(lastSearch);
 
 if (lastSearch && lastSearch.cod === "200") {
   setPage(lastSearch);
-}
+} // document.querySelector("img.ghost").onload = () => {
+//   document.querySelector("div.wrapper").style.backgroundImage =
+//     'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/images/sun-3.jpg")';
+// };
 
-document.querySelector("img.ghost").onload = function () {
-  document.querySelector("div.wrapper").style.backgroundImage = 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/images/sun-3.jpg")';
-};
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("./service-worker.js").then(function (SWRegistration) {
