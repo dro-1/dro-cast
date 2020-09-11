@@ -190,6 +190,7 @@ button.addEventListener("click", function (e) {
     })
     .then(setPage)
     .catch(function (error) {
+      city.innerHTML = "You are not connected to the internet";
       return console.log(error.message);
     });
 });
@@ -199,11 +200,6 @@ console.log(lastSearch);
 if (lastSearch && lastSearch.cod === "200") {
   setPage(lastSearch);
 }
-
-// document.querySelector("img.ghost").onload = () => {
-//   document.querySelector("div.wrapper").style.backgroundImage =
-//     'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/images/sun-3.jpg")';
-// };
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
