@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DroCast</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/pwa/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/pwa/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/pwa/favicon-16x16.png" />
+  <link rel="manifest" href="./assets/pwa/site.webmanifest" />
+  <link rel="mask-icon" href="./assets/pwa/safari-pinned-tab.svg" color="#06b97c" />
+  <link rel="shortcut icon" href="./assets/pwa/favicon.ico" />
+  <meta name="msapplication-TileColor" content="#06b97c" />
+  <meta name="msapplication-config" content="./assets/pwa/browserconfig.xml" />
+  <meta name="theme-color" content="#3997a7" />
+  <meta name='description' content="A PWA for getting weather reports of any part of the world" />
+</head>
+
+<body>
+  <img class='ghost' src="./assets/images/sun-3.jpg" alt='' />
+  <div class="wrapper">
+    <div class="inner-wrapper">
+      <main>
+        <div class="location">
+          <form>
+            <label for='location'>Location</label>
+            <input name='location' id='location' aria-label="Location input box" type="text"
+              placeholder="Enter your location" />
+            <button>Let's Go</button>
+          </form>
+          <p>
+            <span></span>
+            <span></span>
+          </p>
+        </div>
+        <div class="degree">
+          <p></p>
+          <div class="level">
+            <img src="" alt="" />
+            <p></p>
+          </div>
+        </div>
+      </main>
+      <section>
+        <div class="hourly"></div>
+        <div class="daily"></div>
+      </section>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
